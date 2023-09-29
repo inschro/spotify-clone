@@ -11,7 +11,7 @@ import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/navigation";
 
 
-const uploadModal = () => {
+const UploadModal = () => {
     const [isLoading, setIsLoading] = useState(false);
     const uploadModal = useUploadModal();
     const { user } = useUser();
@@ -173,4 +173,4 @@ const uploadModal = () => {
     )
 }
 
-export default uploadModal
+export default UploadModal
